@@ -53,21 +53,21 @@
 	}
 
 	.content_type_clase_fancy #actividad .content .header {
-		background: #e94442;
+	    background: rgba(159,204,59,1);
+        background: -moz-linear-gradient(left, rgba(159,204,59,1) 0%, rgba(97,149,49,1) 100%);
+        background: -webkit-gradient(left top, right top, color-stop(0%, rgba(159,204,59,1)), color-stop(100%, rgba(97,149,49,1)));
+        background: -webkit-linear-gradient(left, rgba(159,204,59,1) 0%, rgba(97,149,49,1) 100%);
+        background: -o-linear-gradient(left, rgba(159,204,59,1) 0%, rgba(97,149,49,1) 100%);
+        background: -ms-linear-gradient(left, rgba(159,204,59,1) 0%, rgba(97,149,49,1) 100%);
+        background: linear-gradient(to right, rgba(159,204,59,1) 0%, rgba(97,149,49,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9fcc3b', endColorstr='#619531', GradientType=1 );
+        padding-left: 86px;
+        padding-right: 0px;
 		margin: 0 -97px 40px;
-		padding-left: 150px;
-		padding-right: 40px;
 		position: relative;
 	}
 	.content_type_clase_fancy #actividad .content .header:before {
-		content: '';
-		display: block;
-		position: absolute;
-		bottom: -13px;
-		left: 0;
-		width: 100%;
-		height: 13px;
-		background: url(images/trazo.png) 0 0 no-repeat;
+		display: none;
 	}
 
 	.content_type_clase_fancy #actividad .content .header.empty:before {
@@ -95,8 +95,8 @@
 		content: '';
 		display: block;
 		position: absolute;
-		left: 0;
-		top: 0;
+		left: -20px;
+		top: 2px;
 		width: 4px;
 		height: 100%;
 		background: rgba(0,0,0,.2);
@@ -106,8 +106,8 @@
 		content: '';
 		display: block;
 		position: absolute;
-		left: -4px;
-		top: 0;
+		left: -20px;
+		top: 2px;
 		width: 4px;
 		height: 100%;
 		background: rgba(255,255,255,.2);
@@ -138,6 +138,7 @@
 
 	#actividad .slide-concatenate .class_slide {
 	    padding-bottom: 20px;
+	    margin-top: -20px;
 	}
 
 	#actividad .slide-concatenate:last-of-type .class_slide {
@@ -490,18 +491,7 @@
 /* Pagination */
 
 .js-slide-wrapper > .header .single-pagination {
-	position: absolute;
-	left: 60px;
-	bottom: 34px;
-	width: 90px;
-	height: 75px;
-	color: #ffffff;
-	font-size: 6.5rem;
-	line-height: 6.5rem;
-	padding: 2px 16px 2px 2px;
-	font-family: 'Cabin Sketch', cursive;
-	font-weight: 300;
-	text-align: right;
+	display: none;
 }
 
 /* Iconos */
@@ -573,7 +563,7 @@
 
 	.bck-enfasis,
 	strong {
-		color: #E94442;
+		color: #056838;
 		font-weight: bold;
 	}
 
@@ -699,7 +689,7 @@
 	}
 
 	.bck-box.box-1 {
-		background: #85b426;
+		background: #9FD03C;
 		padding: 40px;
 		position: relative;
 		margin-top: 60px;
@@ -717,7 +707,7 @@
 	.bck-box.box-1:before {
 		content: '';
 		/*background: url(images/caja1-pin.png) center top no-repeat #85b426;*/
-		background: #85b426;
+		background: #9FD03C;
 		margin-left: -40px;
 		margin-right: -8px;
 		margin-top: -75px;
@@ -760,7 +750,7 @@
 		padding: 20px;
 		font-size: 1.4rem;
 		position: relative;
-		margin-bottom: 40px;
+		margin-bottom: 15px;
 		box-shadow: 0 0 30px 0px rgba(0,0,0,.1);
 	}
 
@@ -926,6 +916,7 @@
 
 	.content_type_clase_fancy #actividad .content .header .title h3 {
 		padding-left: 20px;
+		font-size: 4rem;
 	}
 	.js-slide-wrapper > .header .single-pagination {
 		left: 10px;
@@ -1023,8 +1014,7 @@
 /* Retina images */
 @media (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
 	.content_type_clase_fancy #actividad .content .header:before {
-		background-image: url(images/trazo-2x.png);
-		background-size: 938px 13px;
+		display: none;
 	}
 	.bck-box.box-1:after {
 		background-image: url(images/caja1-esquina-2x.png);
